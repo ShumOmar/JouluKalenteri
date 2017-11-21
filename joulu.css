@@ -1,0 +1,106 @@
+/* Joulu kalenterin yleis-näkymä*/
+@import url(https://fonts.googleapis.com/css?family=Changa:300,400,600,700);
+
+body {
+	font-family: 'Changa', sans-serif;
+	background-image: url(img/norternlights.png);
+	color: #FFFFFF;
+}
+/* tausta*/
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Konteinerit*/
+.kalenteri-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.joulu-kalenteri {
+    margin: 50px 0px 50px 0px;
+    color: #fff;
+    font-size: 4em;
+    font-family: 'Merriweather', serif;
+    font-variant-caps: all-petite-caps;
+}
+
+a {
+    font-family: 'Changa', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: azure;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.grid-item {
+    width: 180px;
+    height: 180px;
+    background-color:#16a085;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border-radius: 30px 2px;;
+}
+.grid-item:hover {
+    background-color: #624049;
+    opacity: #ffffff;
+}
+
+.numero {
+    font-size: 40px;
+    width: 105px;
+    height: 105px;
+    position: relative;
+   
+}
+
+
+  /* ÄLYPUHELIMET*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .kalenteri-container {
+    width: 100%;
+  }
+  .grid-item {
+    width: 105px;
+    height: 105px;
+  }
+  .numero {
+    font-size: 12px;
+  }
+  .bottom-snow {
+  background: none;
+  }
+}
+
+
+/* TABLETTI / PÖYTÄKONE */
+@media only screen and (min-width: 1020px) {
+.kalenteri-container {
+    width: 50%;
+  }
+  .grid-item {
+    width: 105px;
+    height: 105px;
+  }
+  .numero {
+    font-size: 25px;
+  }
+}
+
+footer {
+	font-size: 0.99em;
+	text-align: center;
+	clear: both;
+	padding-top: 300px;
+	color: #ffffff;
+
+}
